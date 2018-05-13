@@ -1,0 +1,36 @@
+mybatis:
+     type-aliases-pakage: com.sal.account.model
+     config-locations: classpath:mybatis/mybatis-config.xml
+     mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+    datasource:
+         name: test
+         driverClassName: com.mysql.jdbc.Driver
+         url: jdbc:mysql://localhost:3306/seckill?useUnicode=true&characterEncoding=utf-8
+         username: root
+         password: 123456
+         # 使用druid数据源
+         type: com.alibaba.druid.pool.DruidDataSource
+         filters: stat
+         maxActive: 20
+         initialSize: 1
+         maxWait: 60000
+         minIdle: 1
+         timeBetweenEvictionRunsMillis: 60000
+         minEvictableIdleTimeMillis: 300000
+         validationQuery: select 'X'
+         testWhileIdle: true
+         testOnBorrow: false
+         testOnReturn: false
+         poolPreparedStatements: true
+         maxPoolPreparedStatementPerConnectionSize: 20
+         maxOpenPrepareStatements: 20
+
+# pagehelper 分页插件
+pagehelper:
+     helperDialect: mysql
+     reasonable: true
+     supportMethodsArguments: true
+     params: count=countSql
+     returnPageInfo: check

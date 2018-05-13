@@ -1,0 +1,52 @@
+POST http://localhost:8090/user/add?userId=1&userName=license&password=123456&phone=18902864046
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-13T014827.200.json
+
+###
+
+GET http://localhost:8090/user/all
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-13T114818.500.json
+
+###
+
+POST http://localhost:8090/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-13T114755.404.json
+
+###
+
+GET http://localhost:8090/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-13T114748.404.json
+
+###
+
+GET http://localhost:8090/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-13T114733.404.json
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
