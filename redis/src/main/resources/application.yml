@@ -1,0 +1,4 @@
+# 包含其他yml文件
+spring:
+  profiles:
+    include: 'redis'

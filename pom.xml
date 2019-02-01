@@ -12,11 +12,14 @@
         <module>dao</module>
         <module>service</module>
         <module>web</module>
+        <module>rabbitmq</module>
+        <module>redis</module>
+        <module>activiti</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.0.RELEASE</version>
+        <version>2.0.3.RELEASE</version>
     </parent>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
